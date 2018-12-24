@@ -1,0 +1,162 @@
+body{
+	color: black ;
+	 background-image: url("bg.jpg");
+	
+}
+
+header{
+    padding: 1em 2em;
+    color:  #3498db ;
+    text-align: center;
+}
+footer{
+    padding: 6em;
+    color:  #3498db ;
+    text-align: center;
+}
+
+#container {
+    font-family: Roboto;
+    text-align: center;
+    margin: 60px auto;
+    width: 100%;
+}
+
+#round {
+    font-size: 2.5em;
+    margin: 0;
+    position: relative;
+    top: 10px;
+	font:Spongeboy Me Bob;
+}
+
+
+#roundResult {
+    height: 135px;
+    margin: 15px;
+}
+
+#playerChoice {
+    float: left;
+    width: 50%;
+    position: relative;
+    right: 4em;
+    font-size: 20px;
+}
+
+#result {
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+}
+
+#computerChoice {
+    float: right;
+    width: 50%;
+    position: relative;
+    left: 3.8em;
+    font-size: 20px;
+}
+
+#choiceButtons {
+    clear: both;
+}
+
+#scores {
+    margin-top: 60px;
+}
+
+#playerScore {
+    float: left;
+    width: 50%;
+    position: relative;
+    right: 2.8em;
+    font-size: 40px;
+	font-style:italic;
+}
+
+#computerScore {
+    float: right; 
+    width: 50%;
+    position: relative;
+    left: 3em;
+    font-size: 40px;
+	font-style:italic;
+}
+
+#ties {
+    clear: both;
+    font-size: 24px;
+    position: relative;
+    top: -80px;    
+}
+
+#winner {
+    font-size: 40px;
+    position: relative;
+    top: -40px;
+}
+
+#reset {
+   
+    background-color: black;
+    padding-bottom: 1px;  
+    width: 100px;
+    height: 60px;
+    padding-bottom: 5px;
+    margin: 10px;  
+    color: white;
+	border-radius: 10%;
+}
+#reset:hover {
+    border: 2px solid  #d5d8dc;
+}
+
+.btn{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+.btn img{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+.btn:hover img{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background:#3498db ;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
